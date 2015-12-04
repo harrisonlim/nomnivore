@@ -44,6 +44,9 @@ gem 'will_paginate', '~> 3.0.6'
 #include simple form gem to add user contributions
 gem 'simple_form'
 
+#include devise gem for user authentication
+gem 'devise', '>= 3.2.4'
+
 # Do NOT include Kaminari pagination gem
 # gem 'kaminari'
 

@@ -33,7 +33,10 @@ group :doc do
 end
 
 #include bootstrap
-gem 'bootstrap-sass', '~> 3.3.4'
+gem 'bootstrap-sass', '~> 3.3.4.1'
+
+#lock down version of the sprockets gem; done to allow use of certain Glyphicons
+gem 'sprockets', '<= 2.11.0'
 
 #include will_paginate
 gem 'will_paginate', '~> 3.0.6'

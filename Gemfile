@@ -38,6 +38,9 @@ gem 'bootstrap-sass', '~> 3.3.4'
 #include will_paginate
 gem 'will_paginate', '~> 3.0.6'
 
+#include simple form gem to add user contributions
+gem 'simple_form'
+
 # Do NOT include Kaminari pagination gem
 # gem 'kaminari'
 

@@ -35,8 +35,11 @@ end
 #include bootstrap
 gem 'bootstrap-sass', '~> 3.3.4'
 
-#include Kaminari pagination gem
-gem 'kaminari'
+#include will_paginate
+gem 'will_paginate', '~> 3.0.6'
+
+# Do NOT include Kaminari pagination gem
+# gem 'kaminari'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'

@@ -47,6 +47,12 @@ gem 'simple_form'
 #include devise gem for user authentication
 gem 'devise', '>= 3.2.4'
 
+#include Geocoder gem for map integration
+gem 'geocoder'
+
+#include Figaro gem to store environment variables on production & development
+gem 'figaro', '>= 1.0.0'
+
 # Do NOT include Kaminari pagination gem
 # gem 'kaminari'
 

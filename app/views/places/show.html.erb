@@ -4,7 +4,6 @@
 	<br /><br />
 	<p><%= @place.description %></p>
 
-
 <style>
       html, body {
         height: 100%;
@@ -22,6 +21,7 @@
 
 function initMap() {
   var myLatLng = {lat: <%= @place.latitude %>, lng: <%= @place.longitude %>};
+  console.log(myLatLng);
 
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 15,

@@ -9,4 +9,6 @@ class Place < ActiveRecord::Base
 	validates :address, :presence => true
 	validates :description, :presence => true
 
+
+
 end

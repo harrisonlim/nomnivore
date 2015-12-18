@@ -53,6 +53,12 @@ gem 'geocoder'
 #include Figaro gem to store environment variables on production & development
 gem 'figaro', '>= 1.0.0'
 
+#include CarrierWave gem to allow uploading of images
+gem 'carrierwave'
+
+#do NOT include Paperclip gem for users to upload images
+#gem "paperclip", git: "git://github.com/thoughtbot/paperclip.git"
+
 # Do NOT include Kaminari pagination gem
 # gem 'kaminari'
 

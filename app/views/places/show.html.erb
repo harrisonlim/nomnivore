@@ -56,9 +56,7 @@ function initMap() {
 <div class="clear"></div>
 
 
-
-
-<!-- Modal -->
+<!-- Comments Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -79,6 +77,17 @@ function initMap() {
     </div>
   </div>
 </div>
+
+<% @place.photos.each do |photo| %>
+  <div class="col-xs-12 col-sm-6">
+    <blockquote>
+      <% if photo.present? %>
+        <b><%= image_tag photo.picture, :class => 'img_responsive' %></b> -
+      <% end %>
+      <% photo.caption %>
+    </blockquote>
+  </div>
+<% end %>
 
 <div class="col-xs-10 col-xs-offset-1">
   <h1 class ="pull-left">Comments</h1>

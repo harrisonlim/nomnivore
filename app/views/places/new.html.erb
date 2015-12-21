@@ -1,11 +1,11 @@
 <div class="booyah-box col-xs-10 col-xs-offset-1">
   <h1>Add Details</h1>
-  <%= simple_form_for @place do |f| %>
+  <%= simple_form_for @place, :html => {:multipart => true} do |f| %>
     <%= f.input :name %>
     <%= f.input :address %>
     <%= f.input :description %>
     <br />
-    <%= f.input :picture %>
+    <%= f.file_field :picture %>
     <br />
     <%= f.submit 'Create', :class => 'btn btn-primary' %>
   <% end %>

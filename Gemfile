@@ -56,6 +56,9 @@ gem 'figaro', '>= 1.0.0'
 #include CarrierWave gem to allow uploading of images
 gem 'carrierwave'
 
+#Include Fog gem for Carrierwave to communicate with Amazon S3
+gem 'fog', '~> 1.3.1'
+
 #do NOT include Paperclip gem for users to upload images
 #gem "paperclip", git: "git://github.com/thoughtbot/paperclip.git"
 

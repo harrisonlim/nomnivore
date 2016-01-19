@@ -33,4 +33,9 @@ Nomnivore::Application.configure do
 
   # Print deprecation notices to the stderr.
   config.active_support.deprecation = :stderr
+
+  # Hook up Devise gem to mailer to build URLs
+  Nomnivore::Application.configure do
+    config.action_mailer.default_url_options = { host: 'test.com' }
+  end
 end

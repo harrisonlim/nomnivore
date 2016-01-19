@@ -59,6 +59,9 @@ gem 'carrierwave'
 #Include Fog gem for Carrierwave to communicate with Amazon S3
 gem 'fog', '~> 1.3.1'
 
+# Include FactoryGirl gem as test suite for creating tests
+gem 'factory_girl_rails', '~> 4.0'
+
 #do NOT include Paperclip gem for users to upload images
 #gem "paperclip", git: "git://github.com/thoughtbot/paperclip.git"
 
